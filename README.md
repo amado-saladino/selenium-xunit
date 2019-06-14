@@ -1,4 +1,4 @@
-# Selenium C \#
+# Selenium C \# with xUnit
 A simple demo on how to use Selenium in C# using page object model
 
 ### Components
@@ -9,8 +9,9 @@ A simple demo on how to use Selenium in C# using page object model
  - Generic utilities
 
 ### pre-requisites
-Make sure you have *[nunit console](https://nunit.org/download/)* installed on your machine
+Install **xunit.runner.console** package from **NuGet package manager** to be able to run the test suite from command line
 
 ### Run
-From *Visual studio* Build solution first to generate dll files required to run *nunit* from command line and go to *debug* folder then run this command:
-`nunit3-console UnitTestProject1.dll`
+Open **Powershell** in project root folder and use this command to run the test
+command:
+`.\packages\xunit.runner.console.2.4.1\tools\net472\xunit.console.exe .\demoqa\bin\Debug\demoqa.dll`
